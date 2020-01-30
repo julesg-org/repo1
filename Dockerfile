@@ -1,12 +1,15 @@
 FROM underworldcode/uwgeodynamics:v2.8.5
 
+ARG NB_USER=jovyan
+ARG NB_UID=1000
 ARG NB_SPACE=${NB_WORK}/userspace
 
+# copy files into ${NB_SPACE}, unfortunately must be root to COPY
 USER root
-RUN mkdir -p ${NB_SPACE} && \
-    chown -R ${NB_USER}:users ${NB_WORK}
-USER ${NB_USER}
+RUN mkdir -p ${NB_SPACE}
+COPY . ${NB_SPACE}
+RUN chown -R ${NB_UID}:users ${NB_SPACE}
 
 VOLUME ${NB_SPACE}
 
-COPY . ${NB_SPACE}
+USER ${NB_USER}
