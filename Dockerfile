@@ -1,2 +1,2 @@
-FROM underworldcode/uwgeodynamics:2.8.5
+FROM underworldcode/uwgeodynamics:v2.8.5
 COPY . /home/jovyan/workspace/.
