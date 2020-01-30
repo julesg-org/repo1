@@ -1,6 +1,6 @@
 FROM underworldcode/uwgeodynamics:v2.8.5
 
-ARG ${NB_SPACE} ${NB_WORK}/userspace
+ARG NB_SPACE=${NB_WORK}/userspace
 
 USER root
 RUN mkdir -p ${NB_SPACE} && \
