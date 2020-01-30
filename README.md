@@ -2,7 +2,7 @@ ____
 Welcome! This is a template git repository for creating REPRODUCIBLE Underworld code based projects.
 
 REPRODUCIBLE because this project:
-1. Is kept in a git repository.
+1. Is stored in a git repository.
 2. Uses a Dockerfile to recreate the exact project environment.
 
 The 2 features above enable the project to take advantage of software engineering and open source principles, such as:
