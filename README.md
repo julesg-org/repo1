@@ -1,3 +1,2 @@
 # repo1
-
-https://mybinder.org/v2/gh/julesg-org/repo1/master?filepath=.%2FTutorial_9_passive_margins.ipynb
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/julesg-org/repo1/master?filepath=.%2FTutorial_9_passive_margins.ipynb)
